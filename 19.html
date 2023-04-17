@@ -1,0 +1,32 @@
+<div x></div>
+<div class="rect" y></div>
+<div class="rect" z></div>
+<style>
+  * {
+    background: #0B2429;
+  }
+  [x] {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #F3AC3C;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%) rotate(45deg) 
+  }
+  .rect {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+  }
+  [y] {
+    background: #1A4341;
+    transform: translate(0px, -70px) skew(0deg, 45deg);
+  }
+  [z] {
+    background: #998235;
+    transform: translate(-70px, -70px) skew(0deg, -45deg) ;
+  }
+</style>
