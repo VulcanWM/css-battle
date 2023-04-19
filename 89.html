@@ -1,0 +1,35 @@
+<div c></div>
+<div t></div>
+<style>
+  *{background: #191919}
+  [c] {
+    background: #f9e492;
+    width: 200;
+    height: 200;
+    position: absolute;
+    top: 50;
+    left: 100;
+    border-radius: 50%;
+  }
+  [t] {
+    position: absolute;
+    top: 234px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 150px;
+    background: #4f77ff;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    overflow: hidden;
+  }
+  [t]::after {
+    content: "";
+    background: #191919;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -109px);
+    border-radius: 100%;
+  }
+</style>
